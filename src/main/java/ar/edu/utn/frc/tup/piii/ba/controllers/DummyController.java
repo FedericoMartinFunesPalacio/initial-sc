@@ -29,19 +29,19 @@ public class DummyController {
     }
 
     @PostMapping("")
-    public ResponseEntity<DummyDto> createDummy(DummyDto dto) {
+    public ResponseEntity<DummyDto> createDummy(@RequestBody DummyDto dto) {
         DummyModel dummy = dummyService.createDummy(null);
         return null;
     }
 
     @PutMapping("")
-    public ResponseEntity<DummyDto> updateDummy(DummyDto dto) {
+    public ResponseEntity<DummyDto> updateDummy(@RequestBody DummyDto dto) {
         DummyModel dummy = dummyService.createDummy(null);
         return null;
     }
 
     @DeleteMapping("")
-    public ResponseEntity<Void> deleteDummy(DummyDto dto) {
+    public ResponseEntity<Void> deleteDummy(@RequestBody DummyDto dto) {
         dummyService.createDummy(null);
         return null;
     }
